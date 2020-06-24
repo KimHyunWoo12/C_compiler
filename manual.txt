@@ -13,3 +13,6 @@ cc -o mycc main.c syntax.c semantic.c gen.c lex.yy.c y.tab.c print.c print_seman
 yacc -d interp.y
 flex interp.l
 cc -0 interp y.tab.c lex.yy.c interp.c lib.c
+
+./mycc "c program file"
+./interp a.asm
